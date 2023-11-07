@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Charm:wght@400;700&family=Fondamento:ital@0;1&family=Kalam:wght@300;400;700&family=Marck+Script&family=Merienda:wght@300;400;500;700;800&family=Montaga&family=Quintessential&display=swap" rel="stylesheet">
+    <!--font awesome(icon)-->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!--bootstrab-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!--css-->
+    <link rel="stylesheet" href="css/style.css">
+    
+</head>
+<body class="">
+
+<header class=" py-4 bg-dark">
+ <div class="container">
+        <h2 class="mb-4  mx-auto text-white fw-bolder">Product managment system</h2>
+        <div class="p-4 m-auto rounded-5 shadow-lg text-dark bg-form">
+         <label class="lead " for="productName"> Product Name :</label>
+         <input type="text"  id="productName" class="form-control my-2 ">
+
+
+         <label class="lead" for="productPrice"> Product Price :</label>
+         <input type="number"  id="productPrice" class="form-control my-2">
+
+         <label class="lead" for="productCategory"> Product Category : </label>
+         <input type="text"  id="productCategory" class="form-control my-2">
+
+         <label class="lead " for="productDescription"> Product Description : </label>
+         <textarea id="productDescription" class="form-control my-2"></textarea>
+
+         <div class="but d-flex gap-4 align-items-center mt-3">
+            <button class=" btn btn-light " onclick="AddProduct();"> Add Product </button>
+         <i class="fa-solid fa-arrow-left"></i>
+         </div>
+         
+    </div>   
+ </div>
+</header>
+
+<div class="container">
+<div class="py-5 table-responsive"> 
+   
+   <div class="d-flex justify-content-center align-content-center gap-2 mb-3">
+   <label for="searchProduct" class="my-auto "> search :</label>
+   <input oninput="searchproduct(this.value)" type="search" class="form-control m-0 w-75"  id="searchProduct">
+   </div> 
+
+   <table class=" table text-center table-dark  table-striped">
+      <thead>
+         <tr>
+            <th>#</th>
+            <th>Name</th>
+            <th>Price</th>
+            <th>Category </th>
+            <th>Description</th>
+            <th>Delete</th>
+            <th>Updata</th>
+         </tr>
+      </thead>
+      <tbody id="tablebody">
+
+      </tbody>
+
+   </table>
+</div>
+</div>
+
+
+
+
+    
+<!--js-->
+<script src="js/all.min.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+:root{
+    --bg-main:rgb(216, 216, 216);
+}
+html{
+    scroll-behavior: smooth;
+    font-size: 18px;
+    /* 1rem=18px */
+}
+body{
+    font-family: 'Merienda', cursive;
+}
+.bg-form{
+    background-color: var(--bg-main);
+}
+input:focus{
+    background-color: rgb(33,37,41) !important;
+    color: rgb(255, 255, 255)!important;
+}
+textarea:focus{
+    background-color: rgb(33,37,41) !important;
+    color: rgb(255, 255, 255)!important;
+}
+header h2{
+    width: fit-content;
+}
+.but svg{
+    animation: icon 1s infinite alternate ease-in-out both;
+}
+.form-control:focus {
+    border-color: rgb(171, 171, 171);
+    box-shadow: 0 0 0 0.25rem rgb(171, 171, 171);
+}
+@keyframes icon {
+    0%{
+    }
+    100%{
+        transform: translateX(-15px);
+    }
+} 
+th{
+    background-color: var(--bg-main)!important;
+    color: black;
+}
+@media (max-width:576px) {
+   header h2{
+        font-size: 18px !important;
+    }  
+    label{
+        font-size: 16px !important;
+    } 
+    .but button{
+        font-size: 16px !important;
+    }
+    th,td{
+        font-size: .9rem ;
+    }
+   
+
+}
